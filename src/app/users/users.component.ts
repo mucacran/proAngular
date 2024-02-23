@@ -20,4 +20,8 @@ export class UsersComponent {
       name: 'Chris'
     }
   ];
+
+  constructor(){
+
+  }
 }
