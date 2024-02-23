@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {}
+
+  botnProgramado() {
+    // Navegar a la página de detalles del elemento con el ID proporcionado
+    this.router.navigate(['/server']); // esta funcion solo buscaras rutas dentro de la palicación
+  }
 
   ngOnInit() {
   }
